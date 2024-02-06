@@ -6,8 +6,9 @@ import android.view.View
 import android.widget.*
 
 class MainActivity : AppCompatActivity() {
-    private fun ArrayAdapter(content: Any, mainActivity: MainActivity, simpleDropdownItem1line: Int, numberArray: Array<Int>): Any {
+    private fun ArrayAdapter(content: Any, mainActivity: MainActivity, simpleDropdownItem1line: Int, numberArray: Array<Int>) {
 
+        return TODO("Provide the return value")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +27,23 @@ class MainActivity : AppCompatActivity() {
 
 
         // TODO Step 3: Change TextView's text size to the number selected in the Spinner */
-        //spinner.onItemSelectedListener = object: ...
+        spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
+
 
     }
 }
+
